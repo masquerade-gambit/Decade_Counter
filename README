@@ -1,0 +1,23 @@
+# 8085 Decade Counter using 7-Segment Display
+
+This project implements a **Decade Counter (0–9)** using the **8085 microprocessor** and a **7-segment display**.
+
+## Working
+- A lookup table stores the segment codes for digits 0–9.
+- The program reads each code sequentially.
+- The code is sent to the output port connected to the 7-segment display.
+- A delay routine ensures each digit is visible.
+- After reaching 9, the counter restarts from 0.
+
+## Components
+- 8085 Microprocessor
+- 8255 Programmable Peripheral Interface
+- 7-Segment Display
+- Supporting circuitry
+
+## Memory Map
+Program Start Address: `2000H`  
+Lookup Table Address: `2600H`
+
+## Output
+Displays digits **0 → 9 repeatedly** on the 7-segment display.
